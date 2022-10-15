@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>03</title>
+  </head>
+  <body>
+
+    <!-- Defines a header for the document or a section. -->
+    <header>
+	     HEADER
+    </header>
+
+    <!-- Defines content aside from the page content. -->
+    <aside>
+	     I'm a sidebar! But you won't see me like that just yet! Because I need to be styled by CSS :)
+    </aside>
+
+    <!--  
+    Defines a section in the document. Section contains a content that is related to the rest of the page most of the times.  
+    id attribute? It specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. It can be used by CSS (to point to a specific style declaration) or JavaScript (to access and manipulate the element).  
+    -->
+    <section id="mainSection">
+      <!--  
+      The <blockquote> tag specifies a section that is quoted from another source.  
+      The <q> tag defines a short quotation.  
+      The <mark> tag defines text that should be marked or highlighted.  
+      The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, etc.).  
+      -->
+	    <blockquote>
+		    <q>That's it, I'm learning <mark>HTML</mark>!</q>
+		    <footer><a href="#" rel="author">Ali Tavakoli</a> - <cite>The Author of Cool tutorials</cite></footer>
+      </blockquote>
+    </section>
+
+    <!-- Defines an article in the document. Article contains a content that is independent to the rest of the page most of the times. -->
+    <article>
+    	<h1>
+        <!--  
+        The <time> tag defines a specific time (or datetime).  
+        datetime attribute? It is used to translate the time into a machine-readable format.  
+        pubdate attribute? Indicates that the date/time in the <time> element is the publication date of the document.  
+        -->
+        My article, posted on <time datetime="2022-10-13T22:19:00-03:30" pubdate>Oct 13th, 2022 at 10:19 PM</time>
+      </h1>
+    	<p>
+        And here is my content.
+      </p>
+      <!--  
+      The <img> tag is used to embed an image.  
+      alt attribute? Specifies an alternate text for an image.  
+      -->
+      <img src="hero.jpg" alt="Hero Image" width="512">
+    </article>
+
+    <section>
+      <p>
+        <!--  
+        The <a> tag defines a hyperlink, which is used to link from one page to another.  
+        href attribute? It's the most important attribute of the <a> element, which indicates the link's destination.  
+        -->
+        This the first <a href="#" title="first link" rel="start">hyperlink</a> in my page.
+        go to <a href="https://github.com.com/" rel="external">github.com</a>
+      </p>
+    </section>
+
+    <!-- Defines a footer for the document or a section. -->
+    <footer>
+      <p>
+    	   Copyright 2022 - All rights reserved. <a href="#" rel="license">view Terms</a>.
+      </p>
+    </footer>
+
+  </body>
+</html>

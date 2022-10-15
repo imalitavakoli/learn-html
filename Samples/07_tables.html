@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>07</title>
+  </head>
+  <body>
+
+    <!--  
+    The <table> tag defines an HTML table.  
+    It consists one or more <tr>, <th>, and <td> elements, and maybe some more elements such as <thead>, <tfoot>, and <tbody>.  
+    -->
+    <table border="1">
+      <caption>Table caption</caption>
+      <tr id="table_header">            <!-- The <tr> tag defines a row. -->
+        <th>01 header</th>              <!-- The <th> tag defines a header cell. -->
+        <th>02 header</th>
+        <th>03 header</th>
+      </tr>
+      <tr id="table_body">
+        <td>01 column</td>              <!-- The <td> tag defines a standard data cell. -->
+        <td>02 column</td>
+        <td>03 column</td>
+      </tr>
+    </table>
+
+    <table border="1">
+      <caption>Table caption</caption>
+      <tr>
+        <th>01 header</th>
+        <td>01 column</td>
+      </tr>
+      <tr>
+      	<th>02 header</th>
+        <td>02 column</td>
+      </tr>
+    </table>
+
+    <table border="2">
+      <caption>cell that spans three columns</caption>
+      <tr>
+      	<th>header 01</th>
+        <th colspan="3">header 02</th>  <!-- colspan attribute? Defines the number of columns a cell should span. -->
+      </tr>
+      <tr>
+      	<td>data 01</td>
+        <td>data 02</td>
+        <td>data 03</td>
+        <td>data 04</td>
+      </tr>
+    </table>
+
+    <table border="2">
+      <caption>cell that spans three rows</caption>
+      <tr>
+        <th>header 01</th>
+        <td>data 01</td>
+      </tr>
+      <tr>
+        <th rowspan="3">header 02</th>  <!-- rowspan attribute? Defines the number of rows a cell should span. -->
+        <td>data 02</td>
+      </tr>
+      <tr>
+      	<td>data 03</td>
+      </tr>
+      <tr>
+      	<td>data 04</td>
+      </tr>
+    </table>
+
+    <!--  
+    The <thead> tag is used to group header content.  
+    The <tbody> tag is used to group body content.  
+    The <tfoot> tag is used to group footer content.  
+    Browsers can use these elements to enable scrolling of the table body independently of the header and footer.  
+    -->
+    <table border="1">
+      <thead>
+      	<tr>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+      	<tr>
+          <td>Item 01</td>
+          <td>$xxx</td>
+        </tr>
+        <tr>
+          <td>Item 02</td>
+          <td>$xxx</td>
+        </tr>
+      </tbody>
+      <tfoot>
+      	<tr>
+          <td colspan="2">Price table</td>
+        </tr>
+      </tfoot>
+    </table>
+
+  </body>
+</html>

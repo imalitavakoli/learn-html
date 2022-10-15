@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>05</title>
+  </head>
+  <body>
+
+    <!--  
+    The <form> tag is used to create an HTML form for user input.  
+    It can contain one or more of the following form elements: <input> <textarea> <button> <select> <option> <optgroup> <fieldset> <label> <output>  
+    name attribute? Specifies the name of a form  
+    action attribute? Specifies where to send the form-data when a form is submitted (it can be a URL to a PHP file so that the submitted data of the form can be handled by a server-side coding language)  
+    method attribute? Specifies the HTTP method to use when sending form-data (it can be 'get' or 'post')  
+    -->
+    <form name="myform" action="#" method="get">
+      <!--  
+      The <label> tag defines a label for <input> elements and some other form related elements.  
+      <label> is useful for screen reader users. It's also helpful when users like to toggle the label related element easily by clicking the label text itself! Because sometimes the element itself is small (such as checkbox input elements)  
+      for attribute? Specifies the id of the form element the label should be bound to.  
+      -->
+    	<label for="fname">First Name</label>
+      <!--  
+      The <input> tag specifies an input field where the user can enter data.  
+      The <input> element can be displayed in several ways, depending on the type attribute.  
+      The most used input types are the following: text, email, tel, password, file, checkbox, radio, button, submit, reset.
+      -->
+      <input type="text" name="firstname" id="fname">
+
+    	<label for="lname">Last Name</label>
+      <input type="text" name="lastname" id="lname">
+
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" step="1" min="18">
+
+      <label for="pic">Profile Photo</label>
+      <input type="file" name="profilephoto" id="pic">
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Clean">
+    </form>
+
+    <form action="#" method="post">
+      Email <input type="email" name="email">
+      pass <input type="password" name="pass">
+      <br>
+      Remember me <input type="checkbox" name="remember" value="remember">
+      <br>
+      <input type="submit" value="Sign in">
+    </form>
+
+    <strong>Sex:</strong>
+    Male <input type="radio" name="sex" value="male">
+    Female <input type="radio" name="sex" value="female">
+
+    <strong>Vehicle:</strong>
+    Car <input type="checkbox" name="vehicle" value="car">
+    Bicycle <input type="checkbox" name="vehicle" value="bicycle">
+
+    <form>
+      <!-- The <fieldset> tag is used to group related elements in a form. -->
+      <fieldset>
+        <!-- The <legend> tag defines a caption for the <fieldset> element. -->
+        <legend>Country</legend>
+        <select name="country">
+        	<option value="USA">USA</option>
+            <option value="UK" selected>UK</option>
+            <option value="UAE">UAE</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+        <textarea rows="3" cols="20">The default value</textarea>
+        <br>
+        <input type="button" value="sample button">
+      </fieldset>
+
+      <fieldset>
+        <legend>Electronic</legend>
+        <select name="electronic">
+          <optgroup label="computer">
+        	   <option value="mouse">Mouse</option>
+             <option value="keboard">Keyboard</option>
+          </optgroup>
+          <optgroup label="devices">
+             <option value="tablet" selected>Tablet</option>
+             <option value="mobile">Mobile</option>
+          </optgroup>
+        </select>
+      </fieldset>
+    </form>
+
+  </body>
+</html>
