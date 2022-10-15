@@ -131,7 +131,7 @@ In sample below, I show you some of the most useful elements (such as header, se
       The <mark> tag defines text that should be marked or highlighted.  
       The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, etc.).  
       -->
-	    <blockquote>
+      <blockquote>
         <q>That's it, I'm learning <mark>HTML</mark>!</q>
         <footer><a href="#" rel="author">Ali Tavakoli</a> - <cite>The Author of Cool tutorials</cite></footer>
       </blockquote>
