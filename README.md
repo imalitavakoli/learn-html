@@ -19,7 +19,7 @@ So you're ready? Let's do it :thumbsup:
 
 
 # Sample files?
-Any sample codes that I write here in this tutorial, can be found in the "*Samples*" directory of the GitHub repository of the tutorial. [Click here](https://github.com/imalitavakoli/learn-html) to download them all.
+Any sample codes that I write here in this tutorial, can be found in the "*Samples*" directory of the GitHub repository of the tutorial. [Click here](https://github.com/imalitavakoli/learn-html/archive/refs/heads/main.zip) to download them all.
 
 **NOTE:** To learn coding and gain confidence, please do not just look at the samples! open up a text editor, write some similar codes yourself, save your files, and open them via a web browser to check out your results! This is the only way to be a coder!
 
@@ -73,7 +73,7 @@ An HTML element is defined by a start tag, some content, and an end tag:
 ## HTML Attributes?
 HTML attributes provide additional information about HTML elements. All HTML elements can have attributes. Attributes are always specified in the start tag. Attributes usually come in name/value pairs like:  
 `name="value"`  
-`<img src="img_girl.jpg" width="500" height="600">`
+`<img src="img.jpg" width="500" height="600">`
 
 
 
@@ -112,12 +112,12 @@ In sample below, I show you some of the most useful elements (such as header, se
 
     <!-- Defines a header for the document or a section. -->
     <header>
-	     HEADER
+      HEADER
     </header>
 
     <!-- Defines content aside from the page content. -->
     <aside>
-	     I'm a sidebar! But you won't see me like that just yet! Because I need to be styled by CSS :)
+      I'm a sidebar! But you won't see me like that just yet! Because I need to be styled by CSS :)
     </aside>
 
     <!--  
@@ -132,14 +132,14 @@ In sample below, I show you some of the most useful elements (such as header, se
       The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, etc.).  
       -->
 	    <blockquote>
-		    <q>That's it, I'm learning <mark>HTML</mark>!</q>
-		    <footer><a href="#" rel="author">Ali Tavakoli</a> - <cite>The Author of Cool tutorials</cite></footer>
+        <q>That's it, I'm learning <mark>HTML</mark>!</q>
+        <footer><a href="#" rel="author">Ali Tavakoli</a> - <cite>The Author of Cool tutorials</cite></footer>
       </blockquote>
     </section>
 
     <!-- Defines an article in the document. Article contains a content that is independent to the rest of the page most of the times. -->
     <article>
-    	<h1>
+      <h1>
         <!--  
         The <time> tag defines a specific time (or datetime).  
         datetime attribute? It is used to translate the time into a machine-readable format.  
@@ -147,7 +147,7 @@ In sample below, I show you some of the most useful elements (such as header, se
         -->
         My article, posted on <time datetime="2022-10-13T22:19:00-03:30" pubdate>Oct 13th, 2022 at 10:19 PM</time>
       </h1>
-    	<p>
+      <p>
         And here is my content.
       </p>
       <!--  
@@ -171,7 +171,7 @@ In sample below, I show you some of the most useful elements (such as header, se
     <!-- Defines a footer for the document or a section. -->
     <footer>
       <p>
-    	   Copyright 2022 - All rights reserved. <a href="#" rel="license">view Terms</a>.
+        Copyright 2022 - All rights reserved. <a href="#" rel="license">view Terms</a>.
       </p>
     </footer>
 
@@ -274,7 +274,7 @@ Here I introduce some form related elements.
       <label> is useful for screen reader users. It's also helpful when users like to toggle the label related element easily by clicking the label text itself! Because sometimes the element itself is small (such as checkbox input elements)  
       for attribute? Specifies the id of the form element the label should be bound to.  
       -->
-    	<label for="fname">First Name</label>
+      <label for="fname">First Name</label>
       <!--  
       The <input> tag specifies an input field where the user can enter data.  
       The <input> element can be displayed in several ways, depending on the type attribute.  
@@ -282,7 +282,7 @@ Here I introduce some form related elements.
       -->
       <input type="text" name="firstname" id="fname">
 
-    	<label for="lname">Last Name</label>
+      <label for="lname">Last Name</label>
       <input type="text" name="lastname" id="lname">
 
       <label for="age">Age</label>
@@ -318,9 +318,9 @@ Here I introduce some form related elements.
         <!-- The <legend> tag defines a caption for the <fieldset> element. -->
         <legend>Country</legend>
         <select name="country">
-        	<option value="USA">USA</option>
-            <option value="UK" selected>UK</option>
-            <option value="UAE">UAE</option>
+          <option value="USA">USA</option>
+          <option value="UK" selected>UK</option>
+          <option value="UAE">UAE</option>
         </select>
       </fieldset>
 
@@ -335,12 +335,12 @@ Here I introduce some form related elements.
         <legend>Electronic</legend>
         <select name="electronic">
           <optgroup label="computer">
-        	   <option value="mouse">Mouse</option>
-             <option value="keboard">Keyboard</option>
+            <option value="mouse">Mouse</option>
+            <option value="keboard">Keyboard</option>
           </optgroup>
           <optgroup label="devices">
-             <option value="tablet" selected>Tablet</option>
-             <option value="mobile">Mobile</option>
+            <option value="tablet" selected>Tablet</option>
+            <option value="mobile">Mobile</option>
           </optgroup>
         </select>
       </fieldset>
