@@ -2,7 +2,7 @@
 Decided to be a web designer or frontend developer today? You came to the right place.
 **Here we're gonna learn HTML, simple and fast!**
 
-You won't see me talk too much, but see codes a lot! And the only way to learn a coding language, is to get your hands dirty with it, open up a text editor, and just start typing! That's exactly what we're going to do.
+You won't see me talk too much, but see codes a lot! And the only way to learn a coding language, is to get your hands dirty with it, **open up a text editor, and just start typing**! That's exactly what we're going to do. **If you don't understand everything at this moment** (e.g., why to write this or that symbol), **don't worry**! Simply watch my sample codes and then try to write the exact (or similar) codes yourself! Just do it! Right now, you don't have to know every little detail... You like to learn fast (and maybe earn some money as a web designer or frontend developer), right? So don't worry about theoretical stuff or history mystery at this stage! There's always time to study and learn such stuff... So here, we're just going to focus on the main stuff and aim to learn HTML a.s.a.p :rocket:
 
 
 
@@ -174,6 +174,15 @@ In sample below, I show you some of the most useful elements (such as header, se
         Copyright 2022 - All rights reserved. <a href="#" rel="license">view Terms</a>.
       </p>
     </footer>
+
+    <!--  
+    Defines a division or a section in an HTML document.  
+    Any sort of content can be put inside the <div> tag!  It is a general tag that basically can be the container of any sort of content.  
+    So some other block-level elements (I mean the elements that always start on a new line, and the browsers automatically add some space before and after them) such as header, section, article, and footer can be replaced by a div element!  
+    -->
+    <div>
+      Some other content here...
+    </div>
 
   </body>
 </html>
