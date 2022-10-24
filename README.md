@@ -23,7 +23,7 @@ Any sample codes that I write here in this tutorial, can be found in the "*Sampl
 
 **NOTE:** To learn coding and gain confidence, please do not just look at the samples! open up a text editor, write some similar codes yourself, save your files, and open them via a web browser to check out your results! This is the only way to be a coder!
 
-**NOTE:** Our sample HTML documents here, look ugly when you open them via a web browser? Well, that's because they are pure HTML! Your document don't look beautiful until you style it by CSS! So yes, CSS is the next thing that you have to learn later, after you have learnt the HTML basics.
+**NOTE:** The sample HTML documents here, don't look so beautiful when you open them via a web browser? Well, that's because they are pure HTML! Your document don't look beautiful until you style it by CSS! So yes, CSS is the next thing that you have to learn later, after you have learnt the HTML basics.
 
 
 
@@ -38,6 +38,8 @@ Imagine a human body... **HTML is the skeleton**! It sets up a webpage's structu
 1. You **write HTML in a text editor** and save it with the extension of *.html* and *UTF-8* encoding. (e.g., index.html)
 2. **Open it via a web browser**, such as Chrome, Edge, Firefox, Safari. (The purpose of a web browser is to read your HTML codes and render the results)
 3. And you will see the results. **That's it**! Didn't imagine as simple as that producing a webpage can be? Well, it's just that simple :smile:
+
+**NOTE:** In order to inspect currently-loaded HTML, CSS and JavaScript codes, or see which assets the page has requested and how long they took to load, and more... You can open your browser's developer tools! What are browser developer tools? Every modern web browser includes a powerful suite of developer tools that help you as the developer to code better, faster, and more efficiently in every aspect. You can find the devtools in most of the browsers under the browser's Menu bar > More tools > Developer tools. [Click here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) to learn more about the browser developer tools.
 
 
 ## A simple HTML document?
@@ -120,16 +122,21 @@ In sample below, I show you some of the most useful elements (such as header, se
       I'm a sidebar! But you won't see me like that just yet! Because I need to be styled by CSS :)
     </aside>
 
-    <!--  
-    Defines a section in the document. Section contains a content that is related to the rest of the page most of the times.  
-    id attribute? It specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. It can be used by CSS (to point to a specific style declaration) or JavaScript (to access and manipulate the element).  
+    <!--
+    Defines a section in the document. Section contains a content that is 
+    related to the rest of the page most of the times.
+    
+    id attribute? It specifies a unique id for an HTML element. The value of the 
+    id attribute must be unique within the HTML document. It can be used by CSS 
+    (to point to a specific style declaration) or JavaScript (to access and 
+    manipulate the element).
     -->
     <section id="mainSection">
-      <!--  
-      The <blockquote> tag specifies a section that is quoted from another source.  
-      The <q> tag defines a short quotation.  
-      The <mark> tag defines text that should be marked or highlighted.  
-      The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, etc.).  
+      <!--
+      The <blockquote> tag specifies a section that is quoted from another source.
+      The <q> tag defines a short quotation.
+      The <mark> tag defines text that should be marked or highlighted.
+      The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, etc.).
       -->
       <blockquote>
         <q>That's it, I'm learning <mark>HTML</mark>!</q>
@@ -137,31 +144,41 @@ In sample below, I show you some of the most useful elements (such as header, se
       </blockquote>
     </section>
 
-    <!-- Defines an article in the document. Article contains a content that is independent to the rest of the page most of the times. -->
+    <!--
+    Defines an article in the document. Article contains a content that is 
+    independent to the rest of the page most of the times.
+    -->
     <article>
       <h1>
-        <!--  
-        The <time> tag defines a specific time (or datetime).  
-        datetime attribute? It is used to translate the time into a machine-readable format.  
-        pubdate attribute? Indicates that the date/time in the <time> element is the publication date of the document.  
+        <!--
+        The <time> tag defines a specific time (or datetime).
+        
+        datetime attribute? It is used to translate the time into a 
+        machine-readable format.
+
+        pubdate attribute? Indicates that the date/time in the <time> element is
+        the publication date of the document.
         -->
         My article, posted on <time datetime="2022-10-13T22:19:00-03:30" pubdate>Oct 13th, 2022 at 10:19 PM</time>
       </h1>
       <p>
         And here is my content.
       </p>
-      <!--  
-      The <img> tag is used to embed an image.  
-      alt attribute? Specifies an alternate text for an image.  
+      <!--
+      The <img> tag is used to embed an image.
+
+      alt attribute? Specifies an alternate text for an image.
       -->
       <img src="hero.jpg" alt="Hero Image" width="512">
     </article>
 
     <section>
       <p>
-        <!--  
-        The <a> tag defines a hyperlink, which is used to link from one page to another.  
-        href attribute? It's the most important attribute of the <a> element, which indicates the link's destination.  
+        <!--
+        The <a> tag defines a hyperlink, which is used to link from one page to another.
+        
+        href attribute? It's the most important attribute of the <a> element, 
+        which indicates the link's destination.
         -->
         This the first <a href="#" title="first link" rel="start">hyperlink</a> in my page.
         go to <a href="https://github.com.com/" rel="external">github.com</a>
@@ -175,10 +192,17 @@ In sample below, I show you some of the most useful elements (such as header, se
       </p>
     </footer>
 
-    <!--  
-    Defines a division or a section in an HTML document.  
-    Any sort of content can be put inside the <div> tag!  It is a general tag that basically can be the container of any sort of content.  
-    So some other block-level elements (I mean the elements that always start on a new line, and the browsers automatically add some space before and after them) such as header, section, article, and footer can be replaced by a div element!  
+    <!--
+    Defines a division or a section in an HTML document.
+
+    Any sort of content can be put inside the <div> tag!  It is a general tag 
+    that basically can be the container of any sort of content.
+
+    So some other block-level elements such as header, section, article, and 
+    footer can be replaced by a div element! (Block-level elements always start 
+    on a new line, and the browsers automatically add some space before and 
+    after them. A block-level element always takes up the full width available. 
+    It stretches out to the left and right as far as it can)
     -->
     <div>
       Some other content here...
@@ -210,13 +234,23 @@ In sample below, I introduce you some more tags and some tips.
 
     <h1 id="anchor">Anchor</h1>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  
-    <!-- By using <a> tags, we can also link to different elements on the same page. If we would have a long article in our webpage, that's a perfect way to reference to some main titles. -->
+    <!--
+    By using <a> tags, we can also link to different elements on the same page.
+    If we would have a long article in our webpage, that's a perfect way to 
+    reference to some main titles.
+    -->
     <a href="#anchor">Click here to go to the "Anchor" heading</a>
 
-    <!-- Defines a thematic break. It is most often displayed as a horizontal rule that is used to separate content. <hr> tag don't need to be closed. -->
+    <!--
+    Defines a thematic break. It is most often displayed as a horizontal rule 
+    that is used to separate content. <hr> tag don't need to be closed.
+    -->
     <hr>
 
-    <!-- The <iframe> tag specifies an inline frame. An inline frame is used to embed another document within the current HTML document. -->
+    <!--
+    The <iframe> tag specifies an inline frame. An inline frame is used to embed 
+    another document within the current HTML document.
+    -->
     <iframe src="02_basics-01.html" name="frame" frameborder="0" width="100%" height="100"></iframe>
     <a href="03_basics-02.html" target="frame">Click here</a> to open 03_basics-02.html in the inline frame above.
 
@@ -233,14 +267,20 @@ In sample below, I introduce you some more tags and some tips.
 
     <hr>
 
-    <!-- The <br> tag inserts a single line break. It is useful for writing addresses or poems. It is an empty tag which means that it has no end tag. -->
+    <!--
+    The <br> tag inserts a single line break. It is useful for writing addresses 
+    or poems. It is an empty tag which means that it has no end tag.
+    -->
     <p>To force<br> line breaks<br> in a text,<br> use the br<br> element.</p>
 
     <hr>
 
     <!--
-    Some characters are reserved in HTML.  
-    If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.  
+    Some characters are reserved in HTML.
+
+    If you use the less than (<) or greater than (>) signs in your text, the 
+    browser might mix them with tags.
+    
     Character entities are used to display reserved characters in HTML.  
     A character entity looks like this: &entityName; OR &#entityNumber;
     -->
@@ -270,24 +310,41 @@ Here I introduce some form related elements.
   </head>
   <body>
 
-    <!--  
-    The <form> tag is used to create an HTML form for user input.  
-    It can contain one or more of the following form elements: <input> <textarea> <button> <select> <option> <optgroup> <fieldset> <label> <output>  
-    name attribute? Specifies the name of a form  
-    action attribute? Specifies where to send the form-data when a form is submitted (it can be a URL to a PHP file so that the submitted data of the form can be handled by a server-side coding language)  
-    method attribute? Specifies the HTTP method to use when sending form-data (it can be 'get' or 'post')  
+    <!--
+    The <form> tag is used to create an HTML form for user input.
+
+    It can contain one or more of the following form elements: <input> 
+    <textarea> <button> <select> <option> <optgroup> <fieldset> <label> <output>
+    
+    name attribute? Specifies the name of a form.
+
+    action attribute? Specifies where to send the form-data when a form is 
+    submitted. (it can be a URL to a PHP file so that the submitted data of the 
+    form can be handled by a server-side coding language)
+
+    method attribute? Specifies the HTTP method to use when sending form-data. 
+    (it can be 'get' or 'post')  
     -->
     <form name="myform" action="#" method="get">
-      <!--  
-      The <label> tag defines a label for <input> elements and some other form related elements.  
-      <label> is useful for screen reader users. It's also helpful when users like to toggle the label related element easily by clicking the label text itself! Because sometimes the element itself is small (such as checkbox input elements)  
-      for attribute? Specifies the id of the form element the label should be bound to.  
+      <!--
+      The <label> tag defines a label for <input> elements and some other form 
+      related elements.
+
+      <label> is useful for screen reader users. It's also helpful when users 
+      like to toggle the label related element easily by clicking the label text 
+      itself! Because sometimes the element itself is small (such as checkbox 
+      input elements)
+
+      for attribute? Specifies the id of the form element the label should be 
+      bound to.
       -->
       <label for="fname">First Name</label>
-      <!--  
-      The <input> tag specifies an input field where the user can enter data.  
-      The <input> element can be displayed in several ways, depending on the type attribute.  
-      The most used input types are the following: text, email, tel, password, file, checkbox, radio, button, submit, reset.
+      <!--
+      The <input> tag specifies an input field where the user can enter data.
+      The <input> element can be displayed in several ways, depending on the type attribute.
+
+      The most used input types are the following: text, email, tel, password, 
+      file, checkbox, radio, button, submit, reset.
       -->
       <input type="text" name="firstname" id="fname">
 
@@ -378,17 +435,20 @@ Here I introduce some list related elements.
 
     <!-- The <ul> tag defines an unordered (bulleted) list. -->
     <ul>
-      <!--  
-      The <li> tag defines a list item.  
+      <!--
+      The <li> tag defines a list item.
       It is used inside ordered lists(<ol>) and unordered lists (<ul>).
       -->
       <li>List Item 01</li>
       <li>List Item 02</li>
     </ul>
 
-    <!--  
-    The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.  
-    type attribute? Specifies the kind of marker to use in the list. Its value can be one of the following: 1, A, a, I, i  
+    <!--
+    The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+
+    type attribute? Specifies the kind of marker to use in the list. Its value 
+    can be one of the following: 1, A, a, I, i
+
     start attribute? Specifies the start value of an ordered list.
     -->
     <ol type="i" start="1">
@@ -396,8 +456,8 @@ Here I introduce some list related elements.
       <li>List Item 02</li>
     </ol>
 
-    <!--  
-    The <dl> tag defines a description list.  
+    <!--
+    The <dl> tag defines a description list.
     It is used in conjunction with <dt> (defines terms/names) and <dd> (describes each term/name).
     -->
     <dl>
@@ -428,9 +488,11 @@ Here I introduce some table related elements.
   </head>
   <body>
 
-    <!--  
-    The <table> tag defines an HTML table.  
-    It consists one or more <tr>, <th>, and <td> elements, and maybe some more elements such as <thead>, <tfoot>, and <tbody>.  
+    <!--
+    The <table> tag defines an HTML table.
+
+    It consists one or more <tr>, <th>, and <td> elements, and maybe some more 
+    elements such as <thead>, <tfoot>, and <tbody>.
     -->
     <table border="1">
       <caption>Table caption</caption>
@@ -490,11 +552,13 @@ Here I introduce some table related elements.
       </tr>
     </table>
 
-    <!--  
-    The <thead> tag is used to group header content.  
-    The <tbody> tag is used to group body content.  
-    The <tfoot> tag is used to group footer content.  
-    Browsers can use these elements to enable scrolling of the table body independently of the header and footer.  
+    <!--
+    The <thead> tag is used to group header content.
+    The <tbody> tag is used to group body content.
+    The <tfoot> tag is used to group footer content.
+
+    Browsers can use these elements to enable scrolling of the table body 
+    independently of the header and footer.
     -->
     <table border="1">
       <thead>
