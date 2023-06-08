@@ -28,13 +28,23 @@ Any sample codes that I write here in this tutorial, can be found in the "*Sampl
 
 
 
-# What is HTML?
+# Table of contents to learn
+- [What is HTML?](#what-is-html)
+- [Basics](#basics)
+- [Forms](#forms)
+- [Lists](#lists)
+- [Tables](#tables)
+
+
+
+
+## What is HTML?
 HTML stands for "*Hyper Text Markup Language*". It is **the standard markup language for creating Web pages**. It consists of a series of elements. Elements tell the browser how to display the content.
 
 Imagine a human body... **HTML is the skeleton**! It sets up a webpage's structure, and makes internet webpages possible!
 
 
-## How to produce an HTML file?
+### How to produce an HTML file?
 1. You **write HTML in a text editor** and save it with the extension of *.html* and *UTF-8* encoding. (e.g., index.html)
 2. **Open it via a web browser**, such as Chrome, Edge, Firefox, Safari. (The purpose of a web browser is to read your HTML codes and render the results)
 3. And you will see the results. **That's it**! Didn't imagine as simple as that producing a webpage can be? Well, it's just that simple :smile:
@@ -42,7 +52,7 @@ Imagine a human body... **HTML is the skeleton**! It sets up a webpage's structu
 **NOTE:** In order to inspect currently-loaded HTML, CSS and JavaScript codes, or see which assets the page has requested and how long they took to load, and more... You can open your browser's developer tools! What are browser developer tools? Every modern web browser includes a powerful suite of developer tools that help you as the developer to code better, faster, and more efficiently in every aspect. You can find the devtools in most of the browsers under the browser's Menu bar > More tools > Developer tools. [Click here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) to learn more about the browser developer tools.
 
 
-## A simple HTML document?
+### A simple HTML document?
 Here I wrote a simple HTML document.
 
 **NOTE:** In my sample codes, I try to quickly explain some definitions by placing comments among the codes.
@@ -65,14 +75,14 @@ Here I wrote a simple HTML document.
 ```
 
 
-## What is an HTML Element?
+### What is an HTML Element?
 An HTML element is defined by a start tag, some content, and an end tag:  
 `<tagname> Content goes here... </tagname>`  
 `<h1>First Heading</h1>`  
 `<p>First paragraph.</p>`
 
 
-## HTML Attributes?
+### HTML Attributes?
 HTML attributes provide additional information about HTML elements. All HTML elements can have attributes. Attributes are always specified in the start tag. Attributes usually come in name/value pairs like:  
 `name="value"`  
 `<img src="img.jpg" width="500" height="600">`
@@ -80,7 +90,7 @@ HTML attributes provide additional information about HTML elements. All HTML ele
 
 
 
-# Basics
+## Basics
 A very simple HTML document, can look like this. As you can see in my sample code below, it's a good practice to also mention the language of the document `lang="en"` and the character encoding `charset="utf-8"`.
 
 ```html
@@ -296,7 +306,7 @@ In sample below, I introduce you some more tags and some tips.
 
 
 
-# Forms
+## Forms
 Here I introduce some form related elements.
 
 ```html
@@ -419,7 +429,7 @@ Here I introduce some form related elements.
 
 
 
-# Lists
+## Lists
 Here I introduce some list related elements.
 
 ```html
@@ -474,7 +484,7 @@ Here I introduce some list related elements.
 
 
 
-# Tables
+## Tables
 Here I introduce some table related elements.
 
 ```html
